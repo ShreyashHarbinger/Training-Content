@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="Assets/favicon.webp" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>E-learning Platform</title>
+  </head>
+  <body>
+    <!-- Navbar Starts Here -->
+
+    <nav class="navbar hide" id="nav">
+      <div class="logo">
+        <a href="./index.html"
+          ><img
+            src="./Assets/harbinger-logo.webp"
+            alt="Header logo"
+            width="199"
+            height="65"
+        /></a>
+      </div>
+      <div class="navLinks">
+        <ul>
+          <a href="#features" class="navLink"> About </a>
+          <a href="#Apps" class="navLink"> Contact </a>
+          <a href="#security" class="navLink"> Blog </a>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Navbar Ends Here -->
+
+    <!-- Courses Starts Here -->
+
+    <section class="Courses section" id="courses">
+      <h2 class="title">Courses</h2>
+      <div class="cardRow">
+        <div class="card">
+          <div class="cardIcon">
+            <i class="fa-brands fa-java"></i>
+          </div>
+          <div class="cardTitle heading">JAVA</div>
+          <div class="cardContent text">
+            "Introduction to Java programming language, covering syntax,
+            object-oriented concepts, data types, control structures, and basic
+            application development."
+          </div>
+          <div class="buttons">
+            <div class="button_slide slide_diagonal">
+                <button class="button" href="#" onclick="show('popup')">View Course</button>
+                
+              </div>
+              <div class="button_slide slide_diagonal">
+               <a href="./java.html" target="_blank"> Documentation
+
+               </a>
+              </div>
+          </div>
+          
+      
+
+
+        </div>
+
+       <!-- This is what will be included inside the popup -->
+<div class="popup" id="popup">
+    <div id="course-info">
+        <h1 class="heading" >Java Course</h1>
+        
+        <h2 class="description" >Description</h2>
+        <p>This course provides an in-depth understanding of Java programming language, covering various topics such as object-oriented programming, data structures, and algorithms.</p>
+        
+    
+        
+        <div class="info">
+            <h2>Course Hours:-</h2>
+            <p class="hours">3 hours</p>
+            
+            <h2>Course Instructor :- </h2>
+            <p>John Smith</p>
+            
+        </div>
+        
+        <h2>YouTube Videos</h2>
+        
+        <iframe width="200" height="200" src="https://www.youtube.com/embed/UmnCZ7-9yDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+      </div>
+    <a href="#" onclick="hide('popup')" class="close">Close</a>
+  </div>
+
+        <div class="card">
+          <div class="cardIcon">
+            <i class="fa-brands fa-python"></i>
+          </div>
+          <div class="cardTitle heading">Python</div>
+          <div class="cardContent text">
+            "Python programming fundamentals, covering syntax, data types,
+            control structures, functions, modules, and introduction to data
+            manipulation and analysis."
+          </div>
+          <div class="buttons">
+            <div class="button_slide slide_diagonal">
+                <button class="button" href="#" onclick="show('popupp')">View Course</button>
+              </div>
+              <div class="button_slide slide_diagonal">
+                <a href="./python.html" target="_blank">Documentation</a>
+            </div>
+          
+          </div>
+        </div>
+
+
+
+        <div class="popupp" id="popupp">
+            <div id="course-info">
+                <h1 class="heading">Python</h1>
+                
+                <h2 class="description">Description</h2>
+                <p>"Python programming fundamentals, covering syntax, data types,
+                    control structures, functions, modules, and introduction to data
+                    manipulation and analysis."</p>
+                
+                <div class="info">
+                    <h2>Course Hours:-</h2>
+                    <p class="hours">2 hours</p>
+                    
+                    <h2>Course Instructor :- </h2>
+                    <p>John Smith</p>
+                    
+                </div>
+                
+                <h2>YouTube Videos</h2>
+                
+                <iframe width="200" height="200" src="https://www.youtube.com/embed/vLqTf2b6GZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+              </div>
+            <a href="#" onclick="hide('popupp')" class="close">Close</a>
+          </div>
+
+      </div>
+
+
+
+
+    </section>
+
+    <!-- Courses ends Here -->
+
+    <script src="./app.js"></script>
+  </body>
+
+  
+</html>

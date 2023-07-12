@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="Assets/favicon.webp" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>E-learning Platform</title>
+  </head>
+  <body>
+    <!-- Navbar Starts Here -->
+
+    <nav class="navbar hide" id="nav">
+      <div class="logo">
+        <a href="./index.html"
+          ><img
+            src="./Assets/harbinger-logo.webp"
+            alt="Header logo"
+            width="199"
+            height="65"
+        /></a>
+      </div>
+      <div class="navLinks">
+        <ul>
+          <a href="#features" class="navLink"> About </a>
+          <a href="#Apps" class="navLink"> Contact </a>
+          <a href="#security" class="navLink"> Blog </a>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Navbar Ends Here -->
+
+    <!-- sidebar Starts Here -->
+
+    <nav class="sidebar" id="navbar">
+      <header>Java Documentation</header>
+
+      <ul>
+        <li>
+          <a class="side_link" href="#Getting started with Java">
+            Getting started with Java</a
+          >
+        </li>
+
+        <li>
+          <a class="side_link" href="#Java_Syntax"> Java Syntax</a>
+        </li>
+
+        <li>
+          <a class="side_link" href="#Java_Output"> Java Output / Print</a>
+        </li>
+
+        <li>
+          <a class="side_link" href="#Java_Comments"> Java Comments</a>
+        </li>
+
+        <li>
+          <a class="side_link" href="#Java_Variables"> Java Variables</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- sidebar Ends Here -->
+
+    <!-- Main Starts here -->
+
+    <main id="main_doc" class="main">
+      <section id="Getting started with Java">
+        <header>1. Getting started with Java</header>
+        <p class="heading">Steps in getting started</p>
+        <ol>
+          <li>
+            <span class="heading">Install Java Development Kit (JDK): </span>
+            Download and install the latest version of JDK from the official
+            Oracle website or OpenJDK from their respective sources.
+          </li>
+
+          <li>
+            <span class="heading"
+              >Set up the Java Development Environment:
+            </span>
+            Configure your system's PATH environment variable to include the
+            JDK's "bin" directory. This step ensures that you can run Java
+            commands from any location in the command prompt or terminal.
+          </li>
+
+          <li>
+            <span class="heading">Choose a Java IDE: </span> Select an
+            Integrated Development Environment (IDE) to write and run Java code
+            more efficiently. Popular options include Eclipse, IntelliJ IDEA,
+            and NetBeans. Install your preferred IDE and set it up according to
+            your requirements.
+          </li>
+
+          <li>
+            <span>Create a Java Project:</span> Start by creating a new Java
+            project within your chosen IDE. This step will provide you with a
+            structured workspace to organize your Java code.
+          </li>
+
+          <li>
+            <span class="heading"> Write Your First Java Program: </span> Create
+            a new Java class within your project and write your first Java
+            program. Typically, this program will include a main method, which
+            serves as the entry point for execution.
+          </li>
+
+          <li>
+            <span class="heading">Compile and Run the Java Program: </span> Use
+            your IDE to compile the Java program. The IDE will generate the
+            necessary bytecode from your source code. Then, execute the compiled
+            program to see the output. You can also use the command line to
+            compile and run Java programs using the javac and java commands,
+            respectively.
+          </li>
+        </ol>
+
+        <p class="heading">Java Quickstart</p>
+        <pre> 
+          <code> 
+            public class Main {
+              public static void main(String[] args) {
+                System.out.println("Hello World");
+              }
+            }
+          </code>
+        </pre>
+      </section>
+      <section id="Java_Syntax">
+        <header>2. Java Syntax</header>
+        <p>
+          In the previous chapter, we created a Java file called Main.java, and
+          we used the following code to print "Hello World" to the screen:
+        </p>
+        <pre> 
+          <code>
+            public class Main {
+              public static void main(String[] args) {
+                System.out.println("Hello World");
+              }
+            }
+          </code>
+        </pre>
+        <p class="heading"> The main() method</p>
+        <p>The main() method is required and you will see it in every Java program:</p>
+        <pre> 
+          <code>
+            public static void main(String[] args)
+
+          </code>
+        </pre>
+        <p>Any code inside the main() method will be executed. Don't worry about the keywords before and after main. You will get to know them bit by bit while reading this tutorial.
+
+          For now, just remember that every Java program has a class name which must match the filename, and that every program must contain the main() method</p>
+      </section>
+      <section id="Java_Output">
+        <header>Java Output / Print</header>
+      </section>
+      <section id="Java_Comments">
+        <header>Java Comments</header>
+      </section>
+      <section id="Java_Variables">
+        <header>Java Variables</header>
+      </section>
+    </main>
+
+    <!-- Main Ends here -->
+
+    <script src="./app.js"></script>
+  </body>
+</html>
